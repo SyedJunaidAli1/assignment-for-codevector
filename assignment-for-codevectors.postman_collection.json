@@ -1,0 +1,75 @@
+{
+  "info": {
+    "_postman_id": "af64b84a-6f2c-4439-b36c-4f4c9a964aa3",
+    "name": "assignment-for-codevectors",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "21633766"
+  },
+  "item": [
+    {
+      "name": "get products api",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8000/api/products?limit=10&nextcursor=6a391bbf4f4d77a361d12c47",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "products"
+          ],
+          "query": [
+            {
+              "key": "limit",
+              "value": "10"
+            },
+            {
+              "key": "nextcursor",
+              "value": "6a391bbf4f4d77a361d12c47"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "get products api on render",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://assignment-for-codevector.onrender.com/api/products?limit=10&nextcursor=6a391bbf4f4d77a361d12c47&category=Electronics",
+          "protocol": "https",
+          "host": [
+            "assignment-for-codevector",
+            "onrender",
+            "com"
+          ],
+          "path": [
+            "api",
+            "products"
+          ],
+          "query": [
+            {
+              "key": "limit",
+              "value": "10"
+            },
+            {
+              "key": "nextcursor",
+              "value": "6a391bbf4f4d77a361d12c47"
+            },
+            {
+              "key": "category",
+              "value": "Electronics"
+            }
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

@@ -6,18 +6,18 @@ This project implements a backend service for browsing a large product catalog (
 
 Features:
 
-* Browse products ordered by newest first
-* Filter products by category
-* Cursor-based pagination
-* Seed script to generate 200,000 products
-* MongoDB indexing for fast queries
+- Browse products ordered by newest first
+- Filter products by category
+- Cursor-based pagination
+- Seed script to generate 200,000 products
+- MongoDB indexing for fast queries
 
 ## Tech Stack
 
-* Node.js
-* Express.js
-* MongoDB Atlas
-* Mongoose
+- Node.js
+- Express.js
+- MongoDB Atlas
+- Mongoose
 
 ## Why I Chose This Stack
 
@@ -31,12 +31,12 @@ MongoDB's ObjectId and indexing capabilities work well for large datasets and al
 
 Each product contains:
 
-* `_id` (MongoDB unique identifier)
-* `name`
-* `category`
-* `price`
-* `createdAt`
-* `updatedAt`
+- `_id` (MongoDB unique identifier)
+- `name`
+- `category`
+- `price`
+- `createdAt`
+- `updatedAt`
 
 Example:
 
@@ -87,7 +87,7 @@ These indexes allow efficient retrieval without scanning the full collection.
 A traditional approach using:
 
 ```js
-skip((page - 1) * limit)
+skip((page - 1) * limit);
 ```
 
 can produce duplicate or missing records when products are inserted or updated while users are browsing.
@@ -197,24 +197,17 @@ npm run dev
 
 ---
 
-## Improvements With More Time
+## live Link
 
-* Add cursor support for previous page navigation.
-* Add validation for query parameters.
-* Add automated tests.
-* Add API documentation using Swagger/OpenAPI.
-* Add rate limiting and caching.
-* Add a frontend interface for browsing products.
-
----
+[https://assignment-for-codevector.onrender.com](https://assignment-for-codevector.onrender.com)
 
 ## AI Usage
 
 AI tools were used to:
 
-* Discuss pagination approaches.
-* Compare offset and cursor pagination.
-* Review database indexing strategies.
-* Validate implementation ideas.
+- Discuss pagination approaches.
+- Compare offset and cursor pagination.
+- Review database indexing strategies.
+- Validate implementation ideas.
 
 The final implementation and design decisions were reviewed and understood before being applied.
